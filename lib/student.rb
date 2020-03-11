@@ -15,8 +15,9 @@ class Student
         name TEXT, 
         grade INTEGER
         )
-        
   end
+  
+  def self.drop_table
         SQL
     DB[:conn].execute(sql) 
   end
