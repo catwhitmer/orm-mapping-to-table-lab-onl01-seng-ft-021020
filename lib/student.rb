@@ -21,7 +21,7 @@ class Student
   end
   
   def self.drop_table
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM ")[0][0]
   end
  
   
